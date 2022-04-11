@@ -57,10 +57,12 @@ function twoPlayerGame () {
     submit.innerText = "Submit Name";
     computerBtn.style.visibility = "hidden";
     submit.addEventListener("click", assignName)
+    if (name1 !== "") {
       for (let i = 0; i < box.length; i++) {
         selectedBox = box[i]
         selectedBox.addEventListener("click", playerMove);
       }
+    }
 }
 
 function onePlayerGame () {
@@ -68,11 +70,10 @@ function onePlayerGame () {
     submit.innerText = "Submit Name";
     submit.addEventListener("click", assignNameOnePlayer);
     computerBtn.style.visibility = "hidden";
-    for (let i = 0; i < box.length; i++) {
-        let selectedBox = box[i]
-        selectedBox.addEventListener("click", playerMoveOnePlayer);
-    }
-    
+        for (let i = 0; i < box.length; i++) {
+            let selectedBox = box[i]
+            selectedBox.addEventListener("click", playerMoveOnePlayer);
+        }
 }
 
 
@@ -276,11 +277,12 @@ function checkForADraw () {
 if (gameOver == false) {
   let counter = 0
   for (key in board) {
-      if (board[key] == true) {
+      if (board[key] === true) {
           counter++
       }
   }
   if (counter === 9) {
+    gameOver = true;
    textChange.innerText = `It's a draw`;
    removeEventsAtEnd ()
   }
