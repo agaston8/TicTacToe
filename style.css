@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 310px;
+    width: 310px;
+    min-width: 310px;
+    max-width: 310px;
+    /* position: absolute; */
+}
+
+#gridContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.box {
+    height: 100px;
+    width:100px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #9EC6C2;
+    color: rgb(14,86,87);
+    font-size: 40px;
+    text-shadow: 2px 2px aliceblue ;
+    font-family: 'Acme', sans-serif;
+    /* flex basis? */
+}
+
+.box:nth-child(3n+2) {
+    border-left: solid 5px rgb(14,86,87);
+    border-right: solid 5px rgb(14,86,87);
+}
+
+.box:nth-child(n+4):nth-child(-n+6) {
+    border-top: solid 5px rgb(14,86,87);
+    border-bottom: solid 5px rgb(14,86,87);
+}
+
+header {
+    background-color: #A54837;
+    width:500px; 
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80% 80% 0% 0%;
+    margin: auto;
+    
+}
+
+#getName {
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #DDA64D;
+    border-radius: 15%;
+    width: 75vw;
+    height: 60px;
+    text-align: center;
+    font-size: large;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#getName p {
+    padding-right: 5px;
+}
+
+#nameInput {
+    padding-top: 5px;
+}
+
+.button {
+    border-radius: 100%;
+    background-color: #ede2ce;
+    height:50px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+}
+
+#button {
+    padding-top: 5px;
+    margin-left: 5px;
+}
+input {
+    margin-top: 15px;
+}
+
+#submit {
+    width: 80px;
+}
+#computer {
+    word-wrap: break-word;
+    width: 80px;
+    /* padding-bottom: 10px; */
+}
+
+#namesGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.names {
+    background-color: #C96A40;
+    width: 225px;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    border-radius: 15%;
+    font-size: 20px;
+}
+
+#changingText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #DDA64D;
+    height: 40px;
+    width: 450px;
+    margin: auto;
+    border-radius: 15%;
+    font-size: 22px;
+}
+
+body {
+    background-color: #ede2ce;
+    background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mid-century-modern-wallpaper-7-1502118726.jpg');
+    color: white;
+    border-left: solid 5px #9EC6C2;
+    border-right: solid 5px #9EC6C2;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#playAgain {
+    visibility: hidden;
+    height: 80px;
+    width: 200px;
+    background-color:rgb(14,86,87);
+    color: white;
+    font-size: 24px;
+    font-family: ;
+    border-radius: 15%;
+    width: 200px;
+    height: 60px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+@media screen and (max-width: 790px) {
+    #getname {
+        /* width: 587px; */
+    }
+}
+
+/* @media  screen and (max-width: 677px) {
+    .names {
+        font-size: 16px;
+    }
+} */
+
+@media screen and (max-width: 587px) {
+    header {
+        width:400px;
+    }
+    #changingText {
+        width:400px;
+    }
+
+    p {
+       display: none;
+    }
+    .names {
+        display: flex;
+        font-size: 16px;
+        align-items: center;
+        word-wrap: break-word;
+    }
+}
+

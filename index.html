@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>
+        <h1>Let's Play Tic Tac Toe</h1>
+    </header>
+    <main>
+        <div id="getName">
+            <p>Enter your name:<p>
+            <div id="nameInput">
+                <input type="text" placeholder="Player 1 Name" id="userName"> </input>
+            </div>
+            <div id="button">
+                <button id="submit" class="button">Play Opponent</button>
+                <button id="computer" class="button">Play Computer</button>
+            </div>
+              
+        </div>
+        <div id="namesGroup">
+            <span class="names" id="playerOne"> Player 1:  </span> 
+            <button id="playAgain">Play Again</button>
+            <span class="names" id="playerTwo"> Player 2:  </span> 
+        </div>
+        <div id="gridContainer">
+            <div id="grid">
+                <div class="box" id="0"></div>
+                <div class="box" id="1"></div>
+                <div class="box" id="2"></div>
+                <div class="box" id="3"></div>
+                <div class="box" id="4"></div>
+                <div class="box" id="5"></div>
+                <div class="box" id="6"></div>
+                <div class="box" id="7"></div>
+                <div class="box" id="8"></div>
+            </div>
+        </div>
+        <div id="changingText">First player to get 3 in a row wins!</div>
+    </main>
+    <footer></footer>
+    <script src='final.js'></script>
+</body>
+</html>
+
