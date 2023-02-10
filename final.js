@@ -15,6 +15,7 @@ const winningCombos = [
     [2,5,8],
     [0,4,8],
     [2,4,6]
+    
 ]
 
 let board = {
@@ -158,8 +159,6 @@ function createArrays (e) {
             console.log(oArray)
         }
     }
-
-
 
 //FUNCTIONS USED IN onePlayerGame
 function assignNameOnePlayer () {
